@@ -13,11 +13,11 @@ public class MainApplication {
 
         // get bean form spring container
         AccountDAO theAccountDao = context.getBean("accountDAO",AccountDAO.class);
-        MemberShipDAO theMemberShipDao = context.getBean("memberShipDAO",MemberShipDAO.class);
 
         // call business method
-        theAccountDao.addAccount(new Account("thanh","10 "));
-        theMemberShipDao.addAccount();
+        theAccountDao.addAccount(new Account("thanh","10 "),true);
+        theAccountDao.setCode("thanh");
+        String name = theAccountDao.getName();
 
         // close context
         context.close();
