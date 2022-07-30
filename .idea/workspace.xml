@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="696894e3-c42a-4198-a1be-04872ee09559" name="Changes" comment="After Returning AOP">
+    <list default="true" id="696894e3-c42a-4198-a1be-04872ee09559" name="Changes" comment="Modify Result After Returning AOP">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/AfterThrowingDemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/AroundDemoApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/service/TrafficFortuneService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/aspect/MyDemoLoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/aspect/MyDemoLoggingAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/dao/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/dao/AccountDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +63,38 @@
     &quot;spring.configuration.checksum&quot;: &quot;cb38fad9d17f9d8cfbeeb60077b1ac25&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.buimanhthanh.springaop.aspect" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AroundDemoApp">
+    <configuration name="AfterThrowingDemoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.buimanhthanh.springaop.AfterThrowingDemoApp" />
+      <module name="SpringTutorialAOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.buimanhthanh.springaop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AroundDemoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.buimanhthanh.springaop.AroundDemoApp" />
+      <module name="SpringTutorialAOP" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.buimanhthanh.springaop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.buimanhthanh.springaop.MainApplication" />
       <module name="SpringTutorialAOP" />
@@ -73,6 +110,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AroundDemoApp" />
+        <item itemvalue="Application.AfterThrowingDemoApp" />
         <item itemvalue="Application.MainApplication" />
       </list>
     </recent_temporary>
@@ -91,7 +130,7 @@
       <workItem from="1659107678632" duration="1983000" />
       <workItem from="1659111926168" duration="119000" />
       <workItem from="1659157392606" duration="1356000" />
-      <workItem from="1659159271024" duration="2848000" />
+      <workItem from="1659159271024" duration="6826000" />
     </task>
     <task id="LOCAL-00001" summary="Demo AOP">
       <created>1659106446075</created>
@@ -114,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659167034938</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modify Result After Returning AOP">
+      <created>1659168016178</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659168016178</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +181,8 @@
     <MESSAGE value="Demo AOP" />
     <MESSAGE value="A part of AOP and tomorow will done" />
     <MESSAGE value="After Returning AOP" />
-    <option name="LAST_COMMIT_MESSAGE" value="After Returning AOP" />
+    <MESSAGE value="Modify Result After Returning AOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modify Result After Returning AOP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

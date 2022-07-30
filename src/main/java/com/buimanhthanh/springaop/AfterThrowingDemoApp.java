@@ -7,7 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 import java.util.List;
 
-public class MainApplication {
+public class AfterThrowingDemoApp {
     public static void main(String[] args) {
         // read java config file
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(DemoConfig.class);
@@ -16,9 +16,16 @@ public class MainApplication {
         AccountDAO theAccountDao = context.getBean("accountDAO",AccountDAO.class);
 
         // call business method
-//        theAccountDao.addAccount(new Account("thanh","10 "),true);
-        List<Account> accounts = theAccountDao.findAccount(false);
+        List<Account> accounts = null;
+        try {
+            boolean tripWire = true;
+            accounts = theAccountDao.findAccount(tripWire);
+        } catch (Exception e){
+            System.out.println("Here exception form main "+e);
+        }
+
         accounts.forEach(System.out::println);
+
         // close context
         context.close();
     }

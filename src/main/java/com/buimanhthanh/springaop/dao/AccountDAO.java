@@ -35,7 +35,10 @@ public class AccountDAO {
         System.out.println(getClass() + " : Doing my db work: adding an account ");
     }
 
-    public List<Account> findAccount(){
+    public List<Account> findAccount(boolean tripWire){
+        if(tripWire){
+            throw  new RuntimeException("Loi~ ne` fix di :>");
+        }
         return List.of(new Account("thanh1","1"),new Account("thanh2","2"),new Account("thanh3","3"));
     }
     @Override
