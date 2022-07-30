@@ -1,8 +1,9 @@
 package com.buimanhthanh.springaop.dao;
 
 import com.buimanhthanh.springaop.model.Account;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
+
+import java.util.List;
 
 @Component
 public class AccountDAO {
@@ -32,5 +33,16 @@ public class AccountDAO {
 
     public void addAccount(Account account,boolean check){
         System.out.println(getClass() + " : Doing my db work: adding an account ");
+    }
+
+    public List<Account> findAccount(){
+        return List.of(new Account("thanh1","1"),new Account("thanh2","2"),new Account("thanh3","3"));
+    }
+    @Override
+    public String toString() {
+        return "AccountDAO{" +
+                "name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                '}';
     }
 }

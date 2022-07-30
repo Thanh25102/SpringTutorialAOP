@@ -6,6 +6,8 @@ import com.buimanhthanh.springaop.dao.MemberShipDAO;
 import com.buimanhthanh.springaop.model.Account;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.List;
+
 public class MainApplication {
     public static void main(String[] args) {
         // read java config file
@@ -16,8 +18,7 @@ public class MainApplication {
 
         // call business method
         theAccountDao.addAccount(new Account("thanh","10 "),true);
-        theAccountDao.setCode("thanh");
-        String name = theAccountDao.getName();
+        List<Account> accounts = theAccountDao.findAccount();
 
         // close context
         context.close();
