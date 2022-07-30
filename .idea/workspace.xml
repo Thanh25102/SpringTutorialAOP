@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="696894e3-c42a-4198-a1be-04872ee09559" name="Changes" comment="A part of AOP and tomorow will done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/aspect/LogParent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/aspect/LogingAPI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/aspect/SecurityLogging.java" afterDir="false" />
+    <list default="true" id="696894e3-c42a-4198-a1be-04872ee09559" name="Changes" comment="After Returning AOP">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/aspect/MyDemoLoggingAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/aspect/MyDemoLoggingAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/dao/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/dao/AccountDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/model/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/buimanhthanh/springaop/model/Account.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +91,7 @@
       <workItem from="1659107678632" duration="1983000" />
       <workItem from="1659111926168" duration="119000" />
       <workItem from="1659157392606" duration="1356000" />
-      <workItem from="1659159271024" duration="1848000" />
+      <workItem from="1659159271024" duration="2848000" />
     </task>
     <task id="LOCAL-00001" summary="Demo AOP">
       <created>1659106446075</created>
@@ -112,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659111855074</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="After Returning AOP">
+      <created>1659167034938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659167034938</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,7 +134,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Demo AOP" />
     <MESSAGE value="A part of AOP and tomorow will done" />
-    <option name="LAST_COMMIT_MESSAGE" value="A part of AOP and tomorow will done" />
+    <MESSAGE value="After Returning AOP" />
+    <option name="LAST_COMMIT_MESSAGE" value="After Returning AOP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

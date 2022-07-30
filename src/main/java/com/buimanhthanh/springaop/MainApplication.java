@@ -17,9 +17,9 @@ public class MainApplication {
         AccountDAO theAccountDao = context.getBean("accountDAO",AccountDAO.class);
 
         // call business method
-        theAccountDao.addAccount(new Account("thanh","10 "),true);
+//        theAccountDao.addAccount(new Account("thanh","10 "),true);
         List<Account> accounts = theAccountDao.findAccount();
-
+        accounts.forEach(System.out::println);
         // close context
         context.close();
     }

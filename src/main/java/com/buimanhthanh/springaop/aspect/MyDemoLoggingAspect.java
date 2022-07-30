@@ -30,8 +30,13 @@ public class MyDemoLoggingAspect {
     }
     @AfterReturning(pointcut = "execution(* com.buimanhthanh.springaop.dao.AccountDAO.findAccount(..))",returning = "result")
     public void afterReturningFindAccountsAdvice(JoinPoint joinPoint, List<Account> result){
-        String method = joinPoint.getSignature().toShortString();
-        System.out.println(method);
-        System.out.println("result = " + result);
+        // modify result value to UpperCase value
+        upperCaseListAccount(result);
+    }
+
+    private void upperCaseListAccount(List<Account> result) {
+        result.forEach(account -> {
+            account.setName(account.getName().toUpperCase());
+        });
     }
 }
